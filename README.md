@@ -21,7 +21,7 @@ Overall, SmartLogger provides geotechnical engineering companies with a practica
 4.Select Expo Go to open the App(Do not select Development Build)
 5.Wait for the App installation and you may start using the App
 
-#Tech Stack used
+# Tech Stack used
 Expo, React Naive, AWS Amplify
 
 
