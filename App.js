@@ -30,8 +30,8 @@ Amplify.configure(awsconfig);
 function LogoTitle() {
   return (
     <Image
-      style={{ width: 50, height: 50 }}
-      source={require("./assets/CEDDLogo.png")}
+      style={{ width: 25, height: 25 }}
+      source={require("./assets/download.png")}
     />
   );
 }
@@ -59,7 +59,7 @@ function MyStack() {
         name="Home"
         component={HomeScreen}
         options={{
-          title: "Smart Logging",
+          title: "Smart Logger",
           headerLeft: (props) => <LogoTitle {...props} />,
           // headerRight: () => (
           //   <Button onPress={() => RefreshPage()} title="Refresh" />
