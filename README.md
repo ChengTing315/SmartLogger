@@ -11,9 +11,12 @@ Overall, SmartLogger provides geotechnical engineering companies with a practica
 
 # Begin with the "SmartLogger"
 1.Download “Expo Go” in App Store/Google Play
-2.For IOS, Scan the QRCode below using camera. (left side)
-3.For Android, Open Expo Go, and then use the Expo Go App to Scan the below QRCode.(right side)
+2.For IOS, Scan the QRCode below using camera. (First img)
+3.For Android, Open Expo Go, and then use the Expo Go App to Scan the below QRCode.(Second img)
+
+
 <img width="277" alt="image" src="https://user-images.githubusercontent.com/39243061/220023954-462c10d0-2608-43f1-b32a-9619712fb312.png">
+
 <img width="275" alt="image" src="https://user-images.githubusercontent.com/39243061/220024070-ddb5120c-76e4-406b-8853-db06ccac3bc0.png">
 4.Select Expo Go to open the App(Do not select Development Build)
 5.Wait for the App installation and you may start using the App
