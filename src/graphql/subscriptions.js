@@ -1,0 +1,441 @@
+/* eslint-disable */
+// this is an auto generated file. This will be overwritten
+
+export const onCreateDepth = /* GraphQL */ `
+  subscription OnCreateDepth($filter: ModelSubscriptionDepthFilterInput) {
+    onCreateDepth(filter: $filter) {
+      id
+      holeName
+      depthLv
+      type
+      fromDepthLv
+      toDepthLv
+      drillDate
+      strength
+      valueColour
+      chromaColour
+      hueColour
+      rockStructure
+      additionalTerms
+      decompositionGrade
+      rockName
+      rockCode
+      disCountinuities
+      agInfoName
+      secondaryConstituent1
+      secondaryConstituent2
+      secondaryConstituent3
+      principalSoilType
+      munsellSoliColour
+      additionalConstituent1
+      additionalConstituent2
+      soilClassification
+      description
+      legendCode
+      holeID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdateDepth = /* GraphQL */ `
+  subscription OnUpdateDepth($filter: ModelSubscriptionDepthFilterInput) {
+    onUpdateDepth(filter: $filter) {
+      id
+      holeName
+      depthLv
+      type
+      fromDepthLv
+      toDepthLv
+      drillDate
+      strength
+      valueColour
+      chromaColour
+      hueColour
+      rockStructure
+      additionalTerms
+      decompositionGrade
+      rockName
+      rockCode
+      disCountinuities
+      agInfoName
+      secondaryConstituent1
+      secondaryConstituent2
+      secondaryConstituent3
+      principalSoilType
+      munsellSoliColour
+      additionalConstituent1
+      additionalConstituent2
+      soilClassification
+      description
+      legendCode
+      holeID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeleteDepth = /* GraphQL */ `
+  subscription OnDeleteDepth($filter: ModelSubscriptionDepthFilterInput) {
+    onDeleteDepth(filter: $filter) {
+      id
+      holeName
+      depthLv
+      type
+      fromDepthLv
+      toDepthLv
+      drillDate
+      strength
+      valueColour
+      chromaColour
+      hueColour
+      rockStructure
+      additionalTerms
+      decompositionGrade
+      rockName
+      rockCode
+      disCountinuities
+      agInfoName
+      secondaryConstituent1
+      secondaryConstituent2
+      secondaryConstituent3
+      principalSoilType
+      munsellSoliColour
+      additionalConstituent1
+      additionalConstituent2
+      soilClassification
+      description
+      legendCode
+      holeID
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onCreateHole = /* GraphQL */ `
+  subscription OnCreateHole($filter: ModelSubscriptionHoleFilterInput) {
+    onCreateHole(filter: $filter) {
+      id
+      hole
+      depthLevel
+      method
+      machineNno
+      flushingMedium
+      coOrdinatesE
+      coOrdinatesN
+      orientation
+      projectStartDate
+      projectEndDate
+      groundLevel
+      loggedBy
+      loggingDate
+      projectID
+      Depths {
+        items {
+          id
+          holeName
+          depthLv
+          type
+          fromDepthLv
+          toDepthLv
+          drillDate
+          strength
+          valueColour
+          chromaColour
+          hueColour
+          rockStructure
+          additionalTerms
+          decompositionGrade
+          rockName
+          rockCode
+          disCountinuities
+          agInfoName
+          secondaryConstituent1
+          secondaryConstituent2
+          secondaryConstituent3
+          principalSoilType
+          munsellSoliColour
+          additionalConstituent1
+          additionalConstituent2
+          soilClassification
+          description
+          legendCode
+          holeID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdateHole = /* GraphQL */ `
+  subscription OnUpdateHole($filter: ModelSubscriptionHoleFilterInput) {
+    onUpdateHole(filter: $filter) {
+      id
+      hole
+      depthLevel
+      method
+      machineNno
+      flushingMedium
+      coOrdinatesE
+      coOrdinatesN
+      orientation
+      projectStartDate
+      projectEndDate
+      groundLevel
+      loggedBy
+      loggingDate
+      projectID
+      Depths {
+        items {
+          id
+          holeName
+          depthLv
+          type
+          fromDepthLv
+          toDepthLv
+          drillDate
+          strength
+          valueColour
+          chromaColour
+          hueColour
+          rockStructure
+          additionalTerms
+          decompositionGrade
+          rockName
+          rockCode
+          disCountinuities
+          agInfoName
+          secondaryConstituent1
+          secondaryConstituent2
+          secondaryConstituent3
+          principalSoilType
+          munsellSoliColour
+          additionalConstituent1
+          additionalConstituent2
+          soilClassification
+          description
+          legendCode
+          holeID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeleteHole = /* GraphQL */ `
+  subscription OnDeleteHole($filter: ModelSubscriptionHoleFilterInput) {
+    onDeleteHole(filter: $filter) {
+      id
+      hole
+      depthLevel
+      method
+      machineNno
+      flushingMedium
+      coOrdinatesE
+      coOrdinatesN
+      orientation
+      projectStartDate
+      projectEndDate
+      groundLevel
+      loggedBy
+      loggingDate
+      projectID
+      Depths {
+        items {
+          id
+          holeName
+          depthLv
+          type
+          fromDepthLv
+          toDepthLv
+          drillDate
+          strength
+          valueColour
+          chromaColour
+          hueColour
+          rockStructure
+          additionalTerms
+          decompositionGrade
+          rockName
+          rockCode
+          disCountinuities
+          agInfoName
+          secondaryConstituent1
+          secondaryConstituent2
+          secondaryConstituent3
+          principalSoilType
+          munsellSoliColour
+          additionalConstituent1
+          additionalConstituent2
+          soilClassification
+          description
+          legendCode
+          holeID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onCreateProject = /* GraphQL */ `
+  subscription OnCreateProject($filter: ModelSubscriptionProjectFilterInput) {
+    onCreateProject(filter: $filter) {
+      project
+      taskOrderNumber
+      id
+      Holes {
+        items {
+          id
+          hole
+          depthLevel
+          method
+          machineNno
+          flushingMedium
+          coOrdinatesE
+          coOrdinatesN
+          orientation
+          projectStartDate
+          projectEndDate
+          groundLevel
+          loggedBy
+          loggingDate
+          projectID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onUpdateProject = /* GraphQL */ `
+  subscription OnUpdateProject($filter: ModelSubscriptionProjectFilterInput) {
+    onUpdateProject(filter: $filter) {
+      project
+      taskOrderNumber
+      id
+      Holes {
+        items {
+          id
+          hole
+          depthLevel
+          method
+          machineNno
+          flushingMedium
+          coOrdinatesE
+          coOrdinatesN
+          orientation
+          projectStartDate
+          projectEndDate
+          groundLevel
+          loggedBy
+          loggingDate
+          projectID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;
+export const onDeleteProject = /* GraphQL */ `
+  subscription OnDeleteProject($filter: ModelSubscriptionProjectFilterInput) {
+    onDeleteProject(filter: $filter) {
+      project
+      taskOrderNumber
+      id
+      Holes {
+        items {
+          id
+          hole
+          depthLevel
+          method
+          machineNno
+          flushingMedium
+          coOrdinatesE
+          coOrdinatesN
+          orientation
+          projectStartDate
+          projectEndDate
+          groundLevel
+          loggedBy
+          loggingDate
+          projectID
+          createdAt
+          updatedAt
+          _version
+          _deleted
+          _lastChangedAt
+        }
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+  }
+`;

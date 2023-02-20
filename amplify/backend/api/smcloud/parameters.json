@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "smcloud",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-06-16T02:56:23.525Z"
+}

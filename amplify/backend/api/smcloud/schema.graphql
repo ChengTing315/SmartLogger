@@ -1,0 +1,35 @@
+type Activity @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  from: AWSTime
+  to: AWSTime
+  detail: String
+  Remarks: String
+  dayrangID: ID! @index(name: "byDay")
+}
+
+type Day @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  dayNo: Int
+  mainScheduel: String
+  tripgiID: ID! @index(name: "byTripGI")
+  Activities: [Activity] @hasMany(indexName: "byDay", fields: ["id"])
+}
+
+type TripGI @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Date: String
+  Location: String
+  company: String
+  remarks: String
+  tripID: ID! @index(name: "byTrip")
+  DayRangs: [Day] @hasMany(indexName: "byTripGI", fields: ["id"])
+  airline: String
+  hotel: String
+}
+
+type Trip @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  TripGIS: [TripGI] @hasMany(indexName: "byTrip", fields: ["id"])
+}
+ 

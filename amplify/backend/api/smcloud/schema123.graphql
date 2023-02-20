@@ -1,0 +1,204 @@
+type Project @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  project: String
+  Holes: [Hole] @hasMany(indexName: "byProject", fields: ["id"])
+}
+
+type WETH @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  LOCA_ID: String
+  WETH_TOP: String
+  WETH_BASE: String
+  WETH_SCH: String
+  WETH_SYS: String
+  WETH_WETH: String
+  WETH_REM: String
+  FILE_FSET: String
+}
+
+type LOCA @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  LOCA_ID: String
+  LOCA_TYPE: String
+  LOCA_STAT: String
+  LOCA_NATE: String
+  LOCA_NATN: String
+  LOCA_GREF: String
+  LOCA_GL: String
+  LOCA_REM: String
+  LOCA_FDEP: String
+  LOCA_STAR: String
+  LOCA_PURP: String
+  LOCA_TERM: String
+  LOCA_ENDD: String
+  LOCA_LETT: String
+  LOCA_LOCX: String
+  LOCA_LOCY: String
+  LOCA_LOCZ: String
+  LOCA_LREF: String
+  LOCA_DATM: String
+  LOCA_ETRV: String
+  LOCA_NTRV: String
+  LOCA_LTRV: String
+  LOCA_XTRL: String
+  LOCA_YTRL: String
+  LOCA_ZTRL: String
+  LOCA_LAT: String
+  LOCA_LON: String
+  LOCA_ELAT: String
+  LOCA_ELON: String
+  LOCA_LLZ: String
+  LOCA_LOCM: String
+  LOCA_LOCA: String
+  LOCA_CLST: String
+  LOCA_ALID: String
+  LOCA_OFFS: String
+  LOCA_CNGE: String
+  LOCA_TRAN: String
+  FILE_FSET: String
+  LOCA_CHKG: String
+  LOCA_APPG: String
+}
+
+type GEOL @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  LOCA_ID: String
+  GEOL_TOP: String
+  GEOL_BASE: String
+  GEOL_DESC: String
+  GEOL_LEG: String
+  GEOL_GEOL: String
+  GEOL_GEO2: String
+  GEOL_STAT: String
+  GEOL_BGS: String
+  GEOL_FORM: String
+  GEOL_REM: String
+  FILE_FSET: String
+}
+
+type CORE @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  LOCA_ID: String
+  CORE_TOP: String
+  CORE_BASE: String
+  CORE_PREC: String
+  CORE_SREC: String
+  CORE_RQD: String
+  CORE_DIAM: String
+  CORE_DURN: String
+  CORE_REM: String
+  FILE_FSET: String
+}
+
+type UNIT @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  UNIT_UNIT: String
+  UNIT_DESC: String
+  UNIT_REM: String
+  FILE_FSET: String
+}
+
+type TYPE @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  TYPE_TYPE: String
+  TYPE_DESC: String
+  FILE_FSET: String
+}
+
+type DICT @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  DICT_TYPE: String
+  DICT_GRP: String
+  DICT_HDNG: String
+  DICT_STAT: String
+  DICT_DTYP: String
+  DICT_DESC: String
+  DICT_UNIT: String
+  DICT_EXMP: String
+  DICT_PGRP: String
+  DICT_REM: String
+  FILE_FSET: String
+}
+
+type ABBR @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  ABBR_HDNG: String
+  ABBR_CODE: String
+  ABBR_DESC: String
+  ABBR_LIST: String
+  ABBR_REM: String
+  FILE_FSET: String
+}
+
+type PROJ @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  HEADING: String
+  PROJ_ID: String
+  PROJ_NAME: String
+  PROJ_LOC: String
+  PROJ_CLNT: String
+  PROJ_CONT: String
+  PROJ_ENG: String
+  PROJ_MEMO: String
+  FILE_FSET: String
+  PROJ_OFFC: String
+}
+
+type Depth @model @auth(rules: [{allow: public}]) {
+  projectID: ID! @index(name: "byProject")
+  projectName: String
+  depthLv: String
+  type: String
+  fromDepthLv: String
+  toDepthLv: String
+  drillStartDate: String
+  drillEndDate: String
+  strength: String
+  valueColour: String
+  chromaColour: String
+  hueColour: String
+  rockStructure: String
+  additionalTerms: String
+  id: ID!
+  decompositionGrade: String
+  rockName: String
+  rockCode: String
+  disCountinuities: String
+  agInfoName: String
+  secondaryConstituent1: String
+  secondaryConstituent2: String
+  secondaryConstituent3: String
+  principalSoilType: String
+  munsellSoliColour: String
+  additionalConstituent1: String
+  additionalConstituent2: String
+  soilConfiscation: String
+  description: String
+  hID: ID! @index(name: "byHole")
+}
+
+type Hole @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  hole: String
+  machineNno: String
+  flushingMedium: String
+  coOrdinatesE: String
+  coOrdinatesN: String
+  orientation: String
+  taskOrderNo: String
+  groundLevel: String
+  method: String
+  projectStartDate: String
+  projectEndDate: String
+  Depths: [Depth] @hasMany(indexName: "byHole", fields: ["id"])
+  projectID: ID! @index(name: "byProject")
+}
+ 

@@ -1,0 +1,56 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smcloud-staging-73615-authRole",
+      "UnauthRoleArn": "arn:aws:iam::677318463968:role/amplify-smcloud-staging-73615-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::677318463968:role/amplify-smcloud-staging-73615-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-smcloud-staging-73615-deployment",
+      "UnauthRoleName": "amplify-smcloud-staging-73615-unauthRole",
+      "StackName": "amplify-smcloud-staging-73615",
+      "StackId": "arn:aws:cloudformation:us-west-2:677318463968:stack/amplify-smcloud-staging-73615/d6d170c0-ec7d-11ec-b237-02c49b15c847",
+      "AmplifyAppId": "d1qvrgr7ki6ze7"
+    },
+    "categories": {
+      "auth": {
+        "smcloud": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1qvrgr7ki6ze7",
+          "type": "manual"
+        }
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smcloud-dev-154443-authRole",
+      "UnauthRoleArn": "arn:aws:iam::677318463968:role/amplify-smcloud-dev-154443-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::677318463968:role/amplify-smcloud-dev-154443-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-smcloud-dev-154443-deployment",
+      "UnauthRoleName": "amplify-smcloud-dev-154443-unauthRole",
+      "StackName": "amplify-smcloud-dev-154443",
+      "StackId": "arn:aws:cloudformation:us-east-1:677318463968:stack/amplify-smcloud-dev-154443/a23f9050-a396-11ed-9e38-0e5f2980c09d",
+      "AmplifyAppId": "d2zu6pvkhtkr16"
+    },
+    "categories": {
+      "auth": {
+        "smcloud": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2zu6pvkhtkr16",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "smcloud": {}
+      },
+      "storage": {
+        "s3smcloudstorage0d7143d4": {}
+      }
+    }
+  }
+}
